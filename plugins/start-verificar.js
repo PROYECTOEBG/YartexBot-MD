@@ -1,67 +1,40 @@
 import { createHash } from 'crypto'
+
 let Reg = /\|?(.*)([.|] *?)([0-9]*)$/i
 let handler = async function (m, { conn, text, usedPrefix, command }) {
-let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-  let user = db.data.users[m.sender]
-  let name2 = conn.getName(m.sender)
-  if (user.registered === true) throw `*[🛑Información 🛑]*\n\n*Usted ya esta registrado 🤨*\n\n*Use el siguiente comando para eliminar su registro*\n\n*${usedPrefix}unreg Número de serie*\n*Si no recuerda su número de serie , usar el siguiente comando 👇🏼*\n${usedPrefix}myns`
-  if (!Reg.test(text)) throw `${mg}👤 *Uso del comando correcto:* *${usedPrefix + command} nombre.edad*\n\n*•🚀 Ejemplo :* *${usedPrefix + command}* ${name2}.16`
-  let [_, name, splitter, age] = text.match(Reg)
-  if (!name) throw '*[🛑 Información 🛑]*\n\n*El nombré no puede estar vacío, por favor intenta nuevamente colocando tu nombre*'
-  if (!age) throw '*[🛑 información 🛑]*\n\n*La edad no puede estar vacía*'
-  if (name.length >= 30) throw '*El nombre es demasiado largo , intenta con un nombre mas corto*' 
-  age = parseInt(age)
-  if (age > 100) throw '*Este bot , no acepta a viejos 👻*'
-  if (age < 5) throw '*No te crear habil , y pon tu edad verdadera 🤨*'
-  user.name = name.trim()
-  user.age = age
-  user.regTime = + new Date
-  user.registered = true
-global.db.data.users[m.sender].money += 400
-global.db.data.users[m.sender].limit += 4
-global.db.data.users[m.sender].exp += 150
-global.db.data.users[m.sender].joincount += 2
-  let sn = createHash('md5').update(m.sender).digest('hex')
-await conn.sendMessage(m.chat, { 
-text: `*乂  R E G I S T R O  乂*\n
-*Nombre 👤 :* ${name}\n
-*Edad 🈴 :* ${age} años\n
-*Bono 🧿 :*\n4 Diamantes 💎\n5000 XP\n
-manda *.menu* para ver el menu`, 
-contextInfo:{
-forwardingScore: 9999999,
-isForwarded: true, 
-mentionedJid:[m.sender],
-"externalAdReply": {
-"showAdAttribution": true,
-"renderLargerThumbnail": true,
-"thumbnail": gataImg.getRandom(), 
-"title": `乂  R E G I S T R O  乂`, 
-"containsAutoReply": true,
-"mediaType": 1, 
-"mediaUrl": nnn, 
-"sourceUrl": nnn, 
-}
-}
-}, { quoted: fkontak })  
-/* await conn.reply(m.chat, `┌───⊷ *𝐑𝐄𝐆𝐈𝐒𝐓𝐑𝐎 𝐂𝐎𝐌𝐏𝐋𝐄𝐓𝐀𝐃𝐎*
-┆ *𝐍𝐨𝐦𝐛𝐫𝐞:*
-┆ ${name}
-┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆ *𝐄𝐝𝐚𝐝:*
-┆ ${age} años
-┆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┆ *𝐁𝐨𝐧𝐨* 
-┆ *$4 𝐃𝐢𝐚𝐦𝐚𝐧𝐭𝐞* 💎
-┆ *$400 𝐋𝐨𝐥𝐢𝐜𝐨𝐢𝐧𝐬*
-┆ *$150 𝐗𝐏*
-┆ *$2 𝐓𝐨𝐤𝐞𝐧𝐬*
-╰──────────────────`, , m)*/
-await m.reply(`${sn}`) 
-}
-handler.help = ['daftar', 'register'].map(v => v + ' <nama>.<umur>')
-handler.tags = ['xp']
+let user = global.db.data.users[m.sender]
+let name2 = conn.getName(m.sender)
+let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? this.user.jid : m.sender
+let pp = await this.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.ph/file/1861aab98389b13db8588.jpg')
+if (user.registered === true) throw `*⚠️ Ya estás registrado*\n\n¿Quiere volver a registrarse?\n\n💬 Use este comando para *eliminar su registro*\n*${usedPrefix}unreg* <Número de serie>`
+if (!Reg.test(text)) throw `*⚠️ Formato incorrecto*\n\n📝 Uso del comamdo: *${usedPrefix + command} nombre.edad*\n💡 Ejemplo : *${usedPrefix + command}* ${name2}.18`
+let [_, name, splitter, age] = text.match(Reg)
+if (!name) throw '*📝 El nombre no puede estar vacío*'
+if (!age) throw '*📝 La edad no puede estar vacía*'
+if (name.length >= 30) throw '*⚠️ El nombre es demasiado largo*' 
+age = parseInt(age)
+if (age > 100) throw '*👴🏻 Wow el abuelo quiere jugar al bot*'
+if (age < 5) throw '*👀 hay un bebé jsjsj*'
+user.name = name.trim()
+user.age = age
+user.regTime = + new Date
+user.registered = true
+let sn = createHash('md5').update(m.sender).digest('hex').slice(0, 6)	
+m.react('📩') 
+let regbot =`🗃️ *R E G I S T R A D O* 🗃️\n
+💌 *Nombre:* ${name}
+📆 *Edad* : ${age} años\n
+🎁 *R E M C O N P E N S A* 🎁\n
+🍫 *Chocolates*: 10
+🍭 *Dulces*: 5
+🧃 *Jugo*: 1
+🍻 *Cerveza*: 3`
+await m.reply(regbot)
+// await conn.sendUrl(m.chat, regbot, m, { externalAdReply: { mediaType: 1, renderLargerThumbnail: true, thumbnail: pp, thumbnailUrl: pp, title: 'Registrado 📩', }})
 
-handler.command = /^(verify|verificar|registrar|reg(ister)?)$/i
+}
+handler.help = ['reg']
+handler.tags = ['rg']
+handler.command = ['verify', 'reg', 'verificar'] 
 
 export default handler
