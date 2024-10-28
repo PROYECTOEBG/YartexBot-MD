@@ -61,8 +61,8 @@ mentionedJid: await conn.parseMention(menu),
 isForwarded: true,
 forwardingScore: 1,
 forwardedNewsletterMessageInfo: {
-newsletterJid: '120363302472386010@newsletter',
-newsletterName: 'YartexBot-MD ✨',
+newsletterJid: 'https://chat.whatsapp.com/I5ZCL8q7Gz00D34nRFQlmi',
+newsletterName: '𝙋𝙧𝙤𝙮𝙚𝙘𝙩𝙤𝙓/𝙀𝘽𝙂',
 serverMessageId: 100
 }}
 
