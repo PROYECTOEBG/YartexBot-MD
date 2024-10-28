@@ -374,7 +374,7 @@ const vi = ['https://telegra.ph/file/d56088393480ea6933592.mp4']
 await conn.sendMessage(m.chat, { video: { url: vi.getRandom() }, gifPlayback: true, caption: menu, mentions: [m.sender, global.conn.user.jid] }, { quoted: fkontak })
 	
 } catch (e) {
-await m.reply(error['error']() + '\n*' () + '*\n*' + usedPrefix + `' ? 'reporte' : 'report'}` + '* ' + ` ` + usedPrefix + command)
+await m.reply() + '\n*' () + '*\n*' + usedPrefix + `' ? 'reporte' : 'report'}` + '* ' + ` ` + usedPrefix + command)
 console.log(``)
 console.log(e)}}
 
