@@ -74,18 +74,18 @@ let botImg4 = 'https://telegra.ph/file/5895dd5bee8c8c24a0966.jpg'
 let botImg5 = 'https://telegra.ph/file/96c870b2df851f15b000f.jpg'
 global.yartexImg = [botImg1, botImg2, botImg3, botImg4, botImg5]
 
-let botVid1 = 'https://telegra.ph/file/991f743c25817e4b94db5.mp4'
-let botVid2 = 'https://telegra.ph/file/a45d4c28a7b57bf2b4e5c.mp4'
-let botVid3 = 'https://telegra.ph/file/42628261be1a83c99907b.mp4'
-let botVid4 = 'https://telegra.ph/file/579959f8734e12ee3d827.mp4'
-let botVid5 = 'https://telegra.ph/file/7f9922e4d2cb2001b4682.mp4'
-let botVid6 = 'https://telegra.ph/file/80527d2fae3aa79c71f05.mp4'
-let botVid7 = 'https://telegra.ph/file/da87e85c1e17a51decea9.mp4' //bl
-let botVid8 = 'https://telegra.ph/file/141ad86e7786dbf6ea2dc.mp4' //bl
-let botVid9 = 'https://telegra.ph/file/b1c3f0ffd8d7af9740000.mp4' //bl
-let botVid10 = 'https://telegra.ph/file/3a3e1bf3825add3679cb9.mp4' //bl
-let botVid11 = 'https://telegra.ph/file/a3485e1c3b115ba186b45.mp4' //bl
-let botVid12 = 'https://telegra.ph/file/1c5f62544f7278899a9be.mp4' //bl
+let botVid1 = 'https://telegra.ph/file/d56088393480ea6933592.mp4'
+let botVid2 = 'https://telegra.ph/file/d56088393480ea6933592.mp4'
+let botVid3 = 'https://telegra.ph/file/d56088393480ea6933592.mp4'
+let botVid4 = 'https://telegra.ph/file/d56088393480ea6933592.mp4'
+let botVid5 = 'https://telegra.ph/file/d56088393480ea6933592.mp4'
+let botVid6 = 'https://telegra.ph/file/d56088393480ea6933592.mp4'
+let botVid7 = 'https://telegra.ph/file/d56088393480ea6933592.mp4' //bl
+let botVid8 = 'https://telegra.ph/file/d56088393480ea6933592.mp4' //bl
+let botVid9 = 'https://telegra.ph/file/d56088393480ea6933592.mp4' //bl
+let botVid10 = 'https://telegra.ph/file/d56088393480ea6933592.mp4' //bl
+let botVid11 = 'https://telegra.ph/file/d56088393480ea6933592.mp4' //bl
+let botVid12 = 'https://telegra.ph/file/d56088393480ea6933592.mp4' //bl
 global.yartexVid = [botVid1, botVid2, botVid3, botVid4, botVid5, botVid6, botVid7, botVid8, botVid9, botVid10, botVid11, botVid12]
   
 //Enlaces
