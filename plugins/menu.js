@@ -127,7 +127,7 @@ let menu = `
 
 🏳️ By Daniel`.trim()
 //conn.sendFile(m.chat, pp, 'lp.jpg', menu, m, false, { contextInfo: { mentionedJid }})
-let vi = await (await fetch(`https://telegra.ph/file/d56088393480ea6933592.mp4`)).buffer()  
+let img = await (await fetch(`https://telegra.ph/file/d56088393480ea6933592.mp4`)).buffer()  
 /*await conn.sendMessage(m.chat, {
 text: menu,
 contextInfo: { 
