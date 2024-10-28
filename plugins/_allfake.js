@@ -115,9 +115,9 @@ global.fake = {
 contextInfo: {
 isForwarded: true,
 forwardedNewsletterMessageInfo: {
-newsletterJid: "120363302472386010@newsletter",
+newsletterJid: "https://chat.whatsapp.com/I5ZCL8q7Gz00D34nRFQlmi",
 serverMessageId: 100,
-newsletterName: 'YartexBot-MD ✨',
+newsletterName: '𝙋𝙧𝙤𝙮𝙚𝙘𝙩𝙤𝙓/𝙀𝘽𝙂',
 },
 externalAdReply: { 
 showAdAttribution: true,
