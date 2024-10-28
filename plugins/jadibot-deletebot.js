@@ -37,9 +37,9 @@ console.error('🚩 La carpeta o sesión no existe', err)
 }
 handler.help = ['delete']
 handler.tags = ['jadibot']
-handler.command = /^(deletebot)$/i
+handler.command = /^(deletesesion)$/i
 
 handler.fail = null
-handler.register = true
+handler.register = false
   
 export default handler
