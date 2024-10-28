@@ -37,22 +37,7 @@ let { money, joincount } = global.db.data.users[m.sender]
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
   
 let menu = `
-╭・・・・☆・・・・・・☆ ・・・・
-┆ ⋮ . ⋅ ˚̣- : ✧ : – ⭒ ⊹ ⭒ – : ✧ : -˚̣⋅ .
-┆ ⋮ ⋅.⊹ *𐒄Ꮛ𐒐Ꮼ́ Ꮯ𐒀𐒄ᎵႱᏋᎿ𐒀* ⋅.⊹
-┆ ⋮ . ⋅ ˚̣- : ✧ : – ⭒ ⊹ ⭒ – : ✧ : -˚̣⋅ .
-┆ ⋮
-┆ ⋮  *Usuario* ${editMenu.mencion ? `@${m.sender.split("@")[0]}` : await conn.getName(m.sender) }
-┆ ⋮  *Lugar* ${nombreLugar} - ${ciudad}
-┆ ⋮  *Registrados* \`\`\`${Object.values(global.db.data.users).filter(user => user.registered == true).length}/${Object.keys(global.db.data.users).length}\`\`\`
-┆ ⋮  *Versión* \`${version}\`
-┆ ⋮  *Menú de Audios* \`${_p}menu2\`
-╰・・・・☆・・・・・・☆ ・・・・
-${editMenu.dividir ? readMore : ''}
-${editMenu.emoji ? '*. ⋅ᘛ⁐̤ᕐ⩺┈•༶ ℹ :･ﾟ✧:･ﾟ✧･ﾟ✧*' : '*. ⋅ᘛ⁐̤ᕐ⩺┈•༶:･ﾟ✧:･ﾟ✧･ﾟ✧*'}
-*. ⋅⊰ꕤ ┆* ⭔ 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐂𝐈Ó𝐍 
-*. ⋅⊰ꕤ ┆* ・・・・・・・・・・・
-
+EN DESARROLLO.
 
 `.trim()
 
