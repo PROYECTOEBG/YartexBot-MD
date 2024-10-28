@@ -14,30 +14,30 @@ global.__filename = function filename(pathURL = import.meta.url, rmPrefix = plat
 const __dirname = global.__dirname(import.meta.url)
 
 global.owner = [
-['5493873687620', '✨ YartexBot-MD', true],
-['593968263524'],
-['5214434703586'],
-['595976126756'],
-['593968585383']]
+['593993370003', '✨ Proyecto X', true],
+['593993370003'],
+['593993370003'],
+['593993370003'],
+['593993370003']]
 
 //BETA: Si quiere evitar escribir el número que será bot en la consola, agregué desde aquí entonces:
 //Sólo aplica para opción 2 (ser bot con código de texto de 8 digitos)
 global.botNumberCode = '' //Ejemplo: +59309090909
 global.confirmCode = ''
 
-global.suittag = ['5214531287294']
+global.suittag = ['593993370003']
 global.mods = []
 global.prems = []
 
 //Solo desarrolladores aprobados
-global.isdev = [['542215034412'], ['593968263524'], ['573012482597'], ['5492215034412'], ['5214434703586'], ['595976126756']]
+global.isdev = [[''], [''], [''], [''], [''], ['']]
 
 //Aqui encuentras los nombres del bot 
-global.packname = 'ʏᴀʀᴛᴇx ʙᴏᴛ ᴍᴅ ✨'
-global.author = 'ɢᴀᴛᴀ ᴅɪᴏs 🫶'
-global.wm = 'ʏᴀʀᴛᴇx ʙᴏᴛ ᴍᴅ | ɢᴀᴛᴀ ᴅɪᴏs 🫶'
-global.wm2 = '                   ʏᴀʀᴛᴇx ʙᴏᴛ ᴍᴅ ✨\n> *♡º°‘¨ һᥱᥴһ᥆ ⍴᥆r 𝖿ᥲᥒs ⍴ᥲrᥲ 𝖿ᥲᥒs ¨‘°º♡*'
-global.des = 'һᥱᥴһ᥆ ⍴᥆r 𝖿ᥲᥒs ⍴ᥲrᥲ 𝖿ᥲᥒs.'
+global.packname = '𝙋𝙍𝙊𝙔𝙀𝘾𝙏𝙊𝙓'
+global.author = '𝙋𝙍𝙊𝙔𝙀𝘾𝙏𝙊𝙓 '
+global.wm = '𝙋𝙍𝙊𝙔𝙀𝘾𝙏𝙊𝙓 '
+global.wm2 = '𝙋𝙍𝙊𝙔𝙀𝘾𝙏𝙊𝙓 '
+global.des = '𝙋𝙍𝙊𝙔𝙀𝘾𝙏𝙊𝙓 '
 
 
 //Las Versiones Y Entre Otros
@@ -89,14 +89,14 @@ let botVid12 = 'https://telegra.ph/file/1c5f62544f7278899a9be.mp4' //bl
 global.yartexVid = [botVid1, botVid2, botVid3, botVid4, botVid5, botVid6, botVid7, botVid8, botVid9, botVid10, botVid11, botVid12]
   
 //Enlaces
-global.yt = 'https://youtube.com/@gatadios'
-global.ig = 'https://instagram.com/gata_dios'
-global.md = 'https://github.com/GataNina-Li/YartexBot-MD'
-global.paypal = 'https://paypal.me/OficialGD'
-global.git = 'https://github.com/GataNina-Li'
-global.email = 'theyartexbot@gmail.com'
-global.group = 'https://chat.whatsapp.com/EfWlxyVXlZ7AWVJ6sjJvyI' //Grupo ofc
-global.channel = 'https://whatsapp.com/channel/0029VabS4KD8KMqeVXXmkG1D'
+global.yt = 'https://chat.whatsapp.com/GzqYw7fK9CADEWEtfL6804'
+global.ig = 'https://chat.whatsapp.com/GzqYw7fK9CADEWEtfL6804'
+global.md = 'https://chat.whatsapp.com/GzqYw7fK9CADEWEtfL6804'
+global.paypal = 'https://chat.whatsapp.com/GzqYw7fK9CADEWEtfL6804'
+global.git = 'https://chat.whatsapp.com/GzqYw7fK9CADEWEtfL6804'
+global.email = 'https://chat.whatsapp.com/GzqYw7fK9CADEWEtfL6804'
+global.group = 'https://chat.whatsapp.com/GzqYw7fK9CADEWEtfL6804' //Grupo ofc
+global.channel = 'https://chat.whatsapp.com/GzqYw7fK9CADEWEtfL6804'
 global.linkSity = [yt, ig, md, paypal, git, channel, email]
 
 //Raíz
